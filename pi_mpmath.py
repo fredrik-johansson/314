@@ -127,7 +127,7 @@ def pi_041():
     return root(2,6)*sqrt(e)/(glaisher**6*barnesg(0.5)**4)
 
 def pi_042():
-    return nsum(lambda k: 4*(-1)**(k+1)/(2*k-1), [1,inf])
+    return nsum(lambda k: 4*(-1)**k/(2*k+1), [0,inf])
 
 def pi_043():
     return nsum(lambda k: (3**k-1)/4**k*zeta(k+1), [1,inf])
