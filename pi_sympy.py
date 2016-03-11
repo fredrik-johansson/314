@@ -63,6 +63,24 @@ def pi_104():
 def pi_105():
     return integrate(1/sqrt(1 - x**2), (x, -1, 1))
 
+def pi_106():
+    return arg(-1)
+
+def pi_107():
+    return simplify(gamma(S(1)/4)*gamma(S(3)/4))/sqrt(2)
+
+def pi_108():
+    return simplify(integrate(3*sqrt(3)/(2*(1 - x**3)**(S(1)/3)), (x, 0, 1)))
+
+def pi_109():
+    return (integrate(exp(-x**2)*cos(2*x), (x, 0, oo))*E*2)**2
+
+def pi_110():
+    return integrate(sqrt(2)/(1 + x**4), (x, -oo, oo))
+
+def pi_111():
+    return integrate(x**2/(x**2 + S(1)/16)**2, (x, 0, oo))
+
 if __name__ == "__main__":
     for fn in dir():
         if fn.startswith("pi_"):
