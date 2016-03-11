@@ -13,6 +13,9 @@ the Python library mpmath. Here are four examples:
 The goal of this repository is to collect such computable pi formulas
 in testable form, translated to different math software.
 
+For the numbered formulas in mathematical notation, see formulas.html:
+https://rawgit.com/fredrik-johansson/314/master/formulas.html
+
 Numerical software should be able to reproduce the value of pi
 with reasonable precision by evaluating the given formula in a
 natural way, and symbolic software should
