@@ -23,5 +23,6 @@ So far, we have several formulas for the following software:
 
 * [mpmath](https://github.com/fredrik-johansson/mpmath) (numerical)
 * [SymPy](https://github.com/sympy/sympy) (symbolic)
+* [Pari/GP](http://pari.math.u-bordeaux.fr/) (numerical)
 
 New formulas are welcome. If you have some Russian-made table of integrals, series and products sitting on your bookshelf, now is the time to open it for inspiration! Added pi programs should be short, but don't literally have to be one-liners; a few lines of code are fine, especially in languages where one-liners are impractical.

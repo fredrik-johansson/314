@@ -42,6 +42,9 @@ def pi_061():
 def pi_073():
     return simplify(E*integrate(cos(x)/(1+x**2), (x,-oo,oo)))
 
+def pi_100():
+    return sqrt(6*summation(1/k**2, (k,1,oo)))
+
 if __name__ == "__main__":
     for fn in dir():
         if fn.startswith("pi_"):

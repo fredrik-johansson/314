@@ -300,6 +300,9 @@ def pi_098():
 def pi_099():
     return 1/limit(lambda x: airybi(x)*x**0.25*exp(-2*x**1.5/3), inf, exp=True)**2
 
+def pi_100():
+    return sqrt(nsum(lambda k: 1/k**2, [1,inf])*6)
+
 if __name__ == "__main__":
     mp.dps = 50
     mp.pretty = True
