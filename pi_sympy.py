@@ -164,11 +164,11 @@ def pi_046():
 # def pi_048():
 #     return summation((4/(8*k+1)-2/(8*k+4)-1/(8*k+5)-1/(8*k+6))/16**k, (k, 0, oo))
 
-def pi_049():
-    return simplify(2/summation((-1)**k*(4*k+1)*(factorial2(2*k-1)/factorial2(2*k))**3, (k, 0, oo)))
+# def pi_049():
+#     return simplify(2/summation((-1)**k*(4*k+1)*(factorial2(2*k-1)/factorial2(2*k))**3, (k, 0, oo)))
 
-def pi_050():
-    return summation(72/(k*(exp(k*pi) - 1))-96/(k*(exp(2*pi*k) - 1))+24/(k*(exp(4*pi*k) - 1)), (k, 1, oo))
+# def pi_050():
+#     return summation(72/(k*(exp(k*pi) - 1))-96/(k*(exp(2*pi*k) - 1))+24/(k*(exp(4*pi*k) - 1)), (k, 1, oo))
 
 # def pi_051():
 #     return 1/summation(binomial(2*k,k)**3*(42*k+5)/2**(12*k+4), (k, 0, oo))
@@ -223,8 +223,8 @@ def pi_061():
 def pi_067():
     return integrate((16*x-16)/(x**4-2*x**3+4*x-4), (x, 0, 1))
 
-def pi_068():
-    return integrate(sqrt(x-x**2), (x, 0, S(1)/4))*24+3*sqrt(3)/4
+# def pi_068():
+#     return integrate(sqrt(x-x**2), (x, 0, S(1)/4))*24+3*sqrt(3)/4
 
 def pi_069():
     return S(22)/7 - integrate(x**4*(1-x)**4/(1+x**2), (x, 0, 1))
@@ -270,6 +270,8 @@ def pi_074():
 #     return 2*product((4*k**2)/(4*k**2-1), (k, 1, oo))
 
 def pi_082():
+    # Assumptions are required here for the exp(log) to cancel
+    k = symbols('k', integer=True)
     return sqrt(6*ln(product(exp(1/k**2), (k, 1, oo)))).rewrite(Sum).doit()
 
 # def pi_083():
@@ -314,9 +316,9 @@ def pi_094():
 def pi_095():
     return limit(factorial(k) / (sqrt(k)*(k/E)**k), k, oo)**2/2
 
-def pi_096():
-    return limit((-(-1)**k*bernoulli(2*k)*2**(2*k-1)/factorial(2*k))**(-1/(2*k)), k,
-    oo)
+# def pi_096():
+#     return limit((-(-1)**k*bernoulli(2*k)*2**(2*k-1)/factorial(2*k))**(-1/(2*k)), k,
+#     oo)
 
 # def pi_097():
 #     # SymPy can't represent this
