@@ -70,8 +70,8 @@ def pi_019():
 def pi_020():
     return simplify((1-E)/meijerg([[1],[S(1)/2]], [[1],[S(1)/2,0]], 1))
 
-def pi_021():
-    return simplify(sqrt(polygamma(1,S(1)/4)-8*Catalan))
+# def pi_021():
+#     return simplify(sqrt(polygamma(1,S(1)/4)-8*Catalan))
 
 # SymPy doesn't have these functions yet
 
