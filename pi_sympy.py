@@ -229,11 +229,22 @@ def pi_068():
 def pi_069():
     return S(22)/7 - integrate(x**4*(1-x)**4/(1+x**2), (x, 0, 1))
 
+def pi_070():
+    return S(355)/113 - integrate(x**8*(1-x)**8*(25+816*x**2)/(1+x**2), (x, 0, 1))/3164
+
 def pi_071():
     return integrate(2*sin(x)/x, (x, 0, oo))
 
+# Warning: this one hangs
+#
+# def pi_072():
+#     return 40*integrate(sin(x)**6/x**6, (x, 0, oo))/11
+
 def pi_073():
     return simplify(E*integrate(cos(x)/(1+x**2), (x,-oo,oo)))
+
+def pi_074():
+    return 8*integrate(cos(x**2), (x, 0, oo))**2
 
 def pi_094():
     return limit(2**(4*k + 1)*factorial(k)**4/(2*k + 1)/factorial(2*k)**2, k, oo)
