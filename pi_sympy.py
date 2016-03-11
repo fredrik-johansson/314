@@ -12,14 +12,47 @@ def pi_001():
 def pi_002():
     return 4*atan(1)
 
+# def pi_003():
+#     return simplify(16*acot(5)-4*acot(239))
+
+# def pi_004():
+#     return simplify(48*acot(49)+128*acot(57)-20*acot(239)+48*acot(110443))
+
 def pi_005():
     return 2*I*simplify(log((1-I)/(1+I)))
+
+def pi_006():
+    return -2*I*asinh(I)
+
+def pi_007():
+    return Ci(-oo)/I
 
 def pi_008():
     return gamma(S(1)/2)**2
 
+def pi_009():
+    return expand_func(beta(S(1)/2, S(1)/2))
+
 def pi_010():
     return (2/diff(erf(x), x).subs(x,0))**2
+
+def pi_011():
+    return solve(sin(x), x)[1]
+
+def pi_012():
+    return solve(cos(x), x)[0]*2
+
+# def pi_013():
+#     return simplify(-2*I*LambertW(-pi/2))
+
+# def pi_014():
+#     return solve(besselj(S(1)/2, x), x)[0]
+
+# def pi_015():
+#     return simplify(3*sqrt(3)/2/hyper([(-1,3),(1,3)],[1],1))
+
+# def pi_016():
+#     return simplify(8/(hyper([S(1)/2,S(1)/2],[1],S(1)/2)*gamma(S(3)/4)/gamma(S(5)/4))**2)
 
 def pi_027():
     return sqrt(6*zeta(2))
@@ -90,4 +123,3 @@ if __name__ == "__main__":
             if v != pi:
                 raise ValueError("is " + str(v) + " really pi?")
             print(v)
-
