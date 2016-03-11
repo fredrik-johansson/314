@@ -246,8 +246,87 @@ def pi_073():
 def pi_074():
     return 8*integrate(cos(x**2), (x, 0, oo))**2
 
+# Warning: printing this expression hangs (https://github.com/sympy/sympy/issues/10800)
+#
+# def pi_075():
+#     return 2*integrate(sin(exp(x)), (x, 1, oo))+2*Si(E)
+
+# def pi_076():
+#     return exp(2*integrate(loggamma(x), (x, 0, 1)))/2
+
+# def pi_077():
+#     return 2*product(sec(pi/2**k), (k, 2, oo))
+
+# def pi_078():
+#     # SymPy can't represent this
+
+# def pi_079():
+#     # SymPy can't represent this
+
+# def pi_080():
+#     return product((2*k)**2/((2*k-1)*(2*k+1)), (k, 1, oo))
+
+# def pi_081():
+#     return 2*product((4*k**2)/(4*k**2-1), (k, 1, oo))
+
+def pi_082():
+    return sqrt(6*ln(product(exp(1/k**2), (k, 1, oo)))).rewrite(Sum).doit()
+
+# def pi_083():
+#     return product((k**2-1)/(k**2+1), (k, 2, oo))/csch(pi)
+
+# def pi_084():
+#     return product((k**2-1)/(k**2+1), (k, 2, oo))*sinh(pi)
+
+# def pi_085():
+#     return product((k**4-1)/(k**4+1), (k, 2, oo))*(cosh(sqrt(2)*pi)-cos(sqrt(2)*pi))/sinh(pi)
+
+# def pi_086():
+#     return sinh(pi)/product((1-1/k**4), (k, 2, oo))/4
+
+# def pi_087():
+#     return sinh(pi)/product((1+1/k**2), (k, 2, oo))/2
+
+# def pi_088():
+#     return (exp(1+EulerGamma/2)/product((1+1/k)**k * exp(1/(2*k)-1), (k, 1, oo)))**2/2
+
+# def pi_089():
+#     return 3*sqrt(2)*cosh(pi*sqrt(3)/2)**2*csch(pi*sqrt(2))/product((1+1/k+1/k**2)**2/(1+2/k+3/k**2), (k, 1, oo))
+
+# def pi_090():
+#     return 2/E*product((1+2/k)**((-1)**(k+1)*k), (k, 1, oo))
+
+def pi_091():
+    # Maybe this is cheating. limit doesn't work with binomial directly. https://github.com/sympy/sympy/issues/10801
+    return limit(16**k/(k*binomial(2*k,k)**2).rewrite(factorial), k, oo)
+
+def pi_092():
+    # Cheating? https://github.com/sympy/sympy/issues/10802
+    return limit(hyperexpand(4*x*hyper([S(1)/2],[S(3)/2, S(3)/2],-x**2)), x, oo)
+
+# def pi_093():
+#     n = symbols('n')
+#     1/log(limit(product(pi/(2*atan(k)), (k, n, 2*n)), n, oo),4)
+
 def pi_094():
     return limit(2**(4*k + 1)*factorial(k)**4/(2*k + 1)/factorial(2*k)**2, k, oo)
+
+def pi_095():
+    return limit(factorial(k) / (sqrt(k)*(k/E)**k), k, oo)**2/2
+
+def pi_096():
+    return limit((-(-1)**k*bernoulli(2*k)*2**(2*k-1)/factorial(2*k))**(-1/(2*k)), k,
+    oo)
+
+# def pi_097():
+#     # SymPy can't represent this
+
+# def pi_098():
+#     return 1/limit(airyai(x)*2*root(x, 4)*exp(2*x**(S(3)/2)/3), x, oo)**2
+
+# def pi_099():
+#     # Gives the wrong result. https://github.com/sympy/sympy/issues/10804
+#     return 1/limit(airybi(x)*root(x, 4)*exp(-2*x**(S(3)/2)/3), x, oo)**2
 
 def pi_100():
     return sqrt(6*summation(1/k**2, (k,1,oo)))
