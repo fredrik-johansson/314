@@ -39,17 +39,20 @@ def pi_060():
 def pi_061():
     return 2*integrate(sqrt(1-x**2), (x,-1,1))
 
+def pi_071():
+    return integrate(2*sin(x)/x, (x, 0, oo))
+
 def pi_073():
     return simplify(E*integrate(cos(x)/(1+x**2), (x,-oo,oo)))
+
+def pi_094():
+    return limit(2**(4*k + 1)*factorial(k)**4/(2*k + 1)/factorial(2*k)**2, k, oo)
 
 def pi_100():
     return sqrt(6*summation(1/k**2, (k,1,oo)))
 
 def pi_101():
     return acos(-1)
-
-def pi_102():
-    return integrate(2*sin(x)/x, (x, 0, oo))
 
 def pi_103():
     return integrate(3*(x**2 + 2)/((x**2 + 1)*(x**2 + 4)), (x, 0, oo))
