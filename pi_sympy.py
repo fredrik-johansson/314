@@ -74,7 +74,7 @@ def pi_020():
 #     return simplify(sqrt(polygamma(1,S(1)/4)-8*Catalan))
 
 # SymPy doesn't have these functions yet
-
+#
 # def pi_022():
 #     return simplify(elliprc(1,2)*4)
 #
@@ -106,7 +106,7 @@ def pi_031():
     return sqrt(12*dirichlet_eta(2))
 
 # SymPy doesn't have dirichlet yet
-
+#
 # def pi_032():
 #     return simplify(4*dirichlet(1,[0,1,0,-1]))
 #
@@ -119,8 +119,8 @@ def pi_031():
 # def pi_035():
 #     return simplify(sqrt(7*zeta(3)/(4*diff(lerchphi(-1,x,1), x)).subs(x, -2)))
 
-# SymPy is either wrong here, or there is some difference in definitions
-
+# Wrong result. See https://github.com/sympy/sympy/pull/10799
+#
 # def pi_036():
 #     return simplify(sqrt(-12*polylog(2,-1)))
 
@@ -131,7 +131,7 @@ def pi_031():
 #     return simplify(root(-81*I*(polylog(3,root(1,3,1))+4*zeta(3)/9)/2,3))
 
 # SymPy doesn't have these functions
-
+#
 # def pi_039():
 #     return 2*clsin(1,1)+1
 #
@@ -147,8 +147,8 @@ def pi_042():
 # def pi_043():
 #     return summation((3**k-1)/4**k*zeta(k+1), (k, 1, oo))
 
-# Wrong result
-
+# Wrong result. See https://github.com/sympy/sympy/pull/10799
+#
 # def pi_044():
 #     return sqrt(summation(8/(2*k-1)**2, (k, 1, oo))).replace(exp_polar, exp)
 
