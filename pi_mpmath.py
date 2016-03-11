@@ -303,6 +303,18 @@ def pi_099():
 def pi_100():
     return sqrt(nsum(lambda k: 1/k**2, [1,inf])*6)
 
+def pi_101():
+    return acos(-1)
+
+def pi_103():
+    return quad(lambda x: 3*(x**2+2)/((x**2+1)*(x**2+4)), [0,inf])
+
+def pi_104():
+    return chop(log(-1)/j)
+
+def pi_105():
+    return extradps(mp.dps)(lambda: quad(lambda x: 1/sqrt(1-x**2),[-1,1]))()
+
 if __name__ == "__main__":
     mp.dps = 50
     mp.pretty = True
