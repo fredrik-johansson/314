@@ -45,6 +45,21 @@ def pi_073():
 def pi_100():
     return sqrt(6*summation(1/k**2, (k,1,oo)))
 
+def pi_101():
+    return acos(-1)
+
+def pi_102():
+    return integrate(2*sin(x)/x, (x, 0, oo))
+
+def pi_103():
+    return integrate(3*(x**2 + 2)/((x**2 + 1)*(x**2 + 4)), (x, 0, oo))
+
+def pi_104():
+    return log(-1)/I
+
+def pi_105():
+    return integrate(1/sqrt(1 - x**2), (x, -1, 1))
+
 if __name__ == "__main__":
     for fn in dir():
         if fn.startswith("pi_"):
