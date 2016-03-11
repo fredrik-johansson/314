@@ -152,8 +152,48 @@ def pi_042():
 # def pi_044():
 #     return sqrt(summation(8/(2*k-1)**2, (k, 1, oo))).replace(exp_polar, exp)
 
+def pi_045():
+    return summation(2*factorial(k)/factorial2(2*k+1), (k, 0, oo))
+
 def pi_046():
     return summation(factorial(k)**2/factorial(2*k+1), (k,0,oo))*3*sqrt(3)/2
+
+# def pi_047():
+#     return simplify(summation(factorial(k)**2/(GoldenRatio**(2*k+1)*factorial(2*k+1)), (k, 0, oo))*(5*sqrt(GoldenRatio+2))/2)
+
+# def pi_048():
+#     return summation((4/(8*k+1)-2/(8*k+4)-1/(8*k+5)-1/(8*k+6))/16**k, (k, 0, oo))
+
+def pi_049():
+    return simplify(2/summation((-1)**k*(4*k+1)*(factorial2(2*k-1)/factorial2(2*k))**3, (k, 0, oo)))
+
+def pi_050():
+    return summation(72/(k*(exp(k*pi) - 1))-96/(k*(exp(2*pi*k) - 1))+24/(k*(exp(4*pi*k) - 1)), (k, 1, oo))
+
+# def pi_051():
+#     return 1/summation(binomial(2*k,k)**3*(42*k+5)/2**(12*k+4), (k, 0, oo))
+
+# def pi_052():
+#     return 4/summation((-1)**k*(1123+21460*k)*factorial2(2*k-1)*factorial2(4*k-1)/(882**(2*k+1)*32**k*factorial(k)**3), (k, 0, oo))
+
+# def pi_053():
+#     return 9801/sqrt(8)/summation(factorial(4*k)*(1103+26390*k)/(factorial(k)**4*396**(4*k)), (k, 0, oo))
+
+# def pi_054():
+#     return 426880*sqrt(10005)/summation((-1)**k*factorial(6*k)*(13591409+545140134*k)/(factorial(k)**3*factorial(3*k)*(640320**3)**k), (k, 0, oo))
+
+# def pi_055():
+#     return 4/summation((6*k+1)*rf(S(1)/2,k)**3/(4**k*factorial(k)**3), (k, 0, oo))
+
+# def pi_056():
+#     n, m = symbols('n, m')
+#     return (ln(8)+sqrt(48*summation((-1)**(m+n)/(m**2+n**2), (m, 1, oo), (n, 1, oo)) + 9*log(2)**2))/2
+
+# def pi_057():
+#     return -summation((-1)**(x+y)/(x**2+y**2), (x, -oo, oo), (y, -oo, oo))/ln(2)
+
+# def pi_058():
+#     return 2*summation(sin(k)/k, (k, 1, oo))+1
 
 def pi_059():
     return integrate(1/(1+x**2), (x,-oo,oo))
@@ -163,6 +203,31 @@ def pi_060():
 
 def pi_061():
     return 2*integrate(sqrt(1-x**2), (x,-1,1))
+
+# def pi_062():
+#     # SymPy can't represent path integrals in the complex plane
+
+# def pi_063():
+#     y = symbols('y')
+#     return 3*(4*log(2+sqrt(3))-integrate(1/sqrt(1+x**2+y**2), (x, -1, 1), (y, -1, 1)))/2
+
+# def pi_064():
+#     return sqrt(8*integrate(1/(1-(x*y)**2), (x, 0, 1), (y, 0, 1)))
+
+# def pi_065():
+#     return sqrt(6*integrate(1/(1-x*y), (x, 0, 1), (y, 0, 1)))
+
+# def pi_066():
+#     return sqrt(6*integrate(x/(exp(x) - 1), (x, 0, oo)))
+
+def pi_067():
+    return integrate((16*x-16)/(x**4-2*x**3+4*x-4), (x, 0, 1))
+
+def pi_068():
+    return integrate(sqrt(x-x**2), (x, 0, S(1)/4))*24+3*sqrt(3)/4
+
+def pi_069():
+    return S(22)/7 - integrate(x**4*(1-x)**4/(1+x**2), (x, 0, 1))
 
 def pi_071():
     return integrate(2*sin(x)/x, (x, 0, oo))

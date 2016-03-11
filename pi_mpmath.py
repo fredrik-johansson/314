@@ -326,4 +326,3 @@ if __name__ == "__main__":
             if abs(v-pi) > eps * 100:
                 raise ValueError(str(v) + " is not even close to pi!")
             print(v)
-
