@@ -306,6 +306,9 @@ def pi_100():
 def pi_101():
     return acos(-1)
 
+def pi_102():
+    return 4*nsum(lambda k: atan(1/fib(2*k+1)), [1,inf])
+
 def pi_103():
     return quad(lambda x: 3*(x**2+2)/((x**2+1)*(x**2+4)), [0,inf])
 
