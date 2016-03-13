@@ -99,10 +99,11 @@ $$\pi = 4 \left(\frac{{}_1F_2(1,3/2,1,1)}{\mathbf{L}_{-1/2}(2)} \right)^2$$
 
 $\mathbf{L}_{\nu}(z)$ is a Struve function.
 
-
 <h2>018</h2>
 
 $$\pi = \frac{1}{{{G_{0, 2}^{1, 0}\left(\begin{matrix}  &  \\0 & \frac{1}{2} \end{matrix} \middle| {0} \right)}}^{2}}$$
+
+$G$ is the Meijer G-function.
 
 <h2>027</h2>
 
@@ -114,11 +115,15 @@ $$\pi = \sqrt{6 \zeta\left(2, 3\right) + \frac{15}{2}}$$
 
 <h2>029</h2>
 
-$$\pi = \sqrt{8 Catalan + \zeta\left(2, \left ( 3, \quad 4\right )\right)}$$
+$$\pi = \sqrt{8 C + \zeta\left(2, \left ( 3, \quad 4\right )\right)}$$
+
+$C$ is Catalan's constant.
 
 <h2>031</h2>
 
 $$\pi = 2 \sqrt{3} \sqrt{\eta\left(2\right)}$$
+
+$\eta(s)$ is the Dirichlet eta function.
 
 <h2>036</h2>
 
@@ -154,11 +159,11 @@ $$\pi = - \frac{3}{2} \int_{-1}^{1}\int_{-1}^{1} \frac{1}{\sqrt{x^{2} + y^{2} + 
 
 <h2>064</h2>
 
-$$\pi = 2 \sqrt{2} \sqrt{\int_{0}^{1}\int_{0}^{1} \frac{1}{- x^{2} y^{2} + 1}\, dx\, dy}$$
+$$\pi = 2 \sqrt{2} \sqrt{\int_{0}^{1}\int_{0}^{1} \frac{1}{1 - x^{2} y^{2}}\, dx\, dy}$$
 
 <h2>065</h2>
 
-$$\pi = \sqrt{6} \sqrt{\int_{0}^{1}\int_{0}^{1} \frac{1}{- x y + 1}\, dx\, dy}$$
+$$\pi = \sqrt{6} \sqrt{\int_{0}^{1}\int_{0}^{1} \frac{1}{1 - x y}\, dx\, dy}$$
 
 <h2>066</h2>
 
@@ -170,23 +175,23 @@ $$\pi = \int_{0}^{1} \frac{16 x - 16}{x^{4} - 2 x^{3} + 4 x - 4}\, dx$$
 
 <h2>068</h2>
 
-$$\pi = \frac{3 \sqrt{3}}{4} + 24 \int_{0}^{\frac{1}{4}} \sqrt{- x^{2} + x}\, dx$$
+$$\pi = \frac{3 \sqrt{3}}{4} + 24 \int_{0}^{\frac{1}{4}} \sqrt{x - x^{2}}\, dx$$
 
 <h2>069</h2>
 
-$$\pi = - \int_{0}^{1} \frac{x^{4} \left(- x + 1\right)^{4}}{x^{2} + 1}\, dx + \frac{22}{7}$$
+$$\pi = - \int_{0}^{1} \frac{x^{4} \left(x - 1\right)^{4}}{x^{2} + 1}\, dx + \frac{22}{7}$$
 
 <h2>070</h2>
 
-$$\pi = - \frac{1}{3164} \int_{0}^{1} \frac{x^{8} \left(- x + 1\right)^{8}}{x^{2} + 1} \left(816 x^{2} + 25\right)\, dx + \frac{355}{113}$$
+$$\pi = - \frac{1}{3164} \int_{0}^{1} \frac{x^{8} \left(x - 1\right)^{8}}{x^{2} + 1} \left(816 x^{2} + 25\right)\, dx + \frac{355}{113}$$
 
 <h2>071</h2>
 
-$$\pi = \int_{0}^{\infty} \frac{2}{x} \sin{\left (x \right )}\, dx$$
+$$\pi = \int_{0}^{\infty} \frac{2 \sin{\left x( \right )}}{x}\, dx$$
 
 <h2>072</h2>
 
-$$\pi = \frac{40}{11} \int_{0}^{\infty} \frac{1}{x^{6}} \sin^{6}{\left (x \right )}\, dx$$
+$$\pi = \frac{40}{11} \int_{0}^{\infty} \frac{\sin^{6}{\left (x \right )}}{x^{6}} \, dx$$
 
 <h2>073</h2>
 
@@ -198,7 +203,7 @@ $$\pi = 8 \int_{0}^{\infty} \cos{\left (x^{2} \right )}\, dx^{2}$$
 
 <h2>076</h2>
 
-$$\pi = \frac{1}{2} e^{2 \int_{0}^{1} \operatorname{loggamma}{\left (x \right )}\, dx}$$
+$$\pi = \frac{1}{2} e^{2 \int_{0}^{1} \log \Gamma{\left (x \right )}\, dx}$$
 
 <h2>077</h2>
 
@@ -226,7 +231,7 @@ $$\pi = \sinh{\left (\pi \right )} \prod_{k=2}^{\infty} \frac{k^{2} - 1}{k^{2} +
 
 <h2>085</h2>
 
-$$\pi = \frac{1}{\sinh{\left (\pi \right )}} \left(- \cos{\left (\sqrt{2} \pi \right )} + \cosh{\left (\sqrt{2} \pi \right )}\right) \prod_{k=2}^{\infty} \frac{k^{4} - 1}{k^{4} + 1}$$
+$$\pi = \frac{1}{\sinh{\left (\pi \right )}} \left(\cosh{\left (\sqrt{2} \pi \right )} - \cos{\left (\sqrt{2} \pi \right )}\right) \prod_{k=2}^{\infty} \frac{k^{4} - 1}{k^{4} + 1}$$
 
 <h2>086</h2>
 
@@ -238,7 +243,7 @@ $$\pi = \frac{\sinh{\left (\pi \right )}}{2 \prod_{k=2}^{\infty} \left(1 + \frac
 
 <h2>088</h2>
 
-$$\pi = \frac{e^{\gamma + 2}}{2 \prod_{k=1}^{\infty} \left(1 + \frac{1}{k}\right)^{k} e^{-1 + \frac{1}{2 k}}^{2}}$$
+$$\pi = \frac{e^{\gamma + 2}}{2 \prod_{k=1}^{\infty} \left(1 + \frac{1}{k}\right)^k e^{\frac{1}{2 k} - 1}^{2}}$$
 
 <h2>089</h2>
 
@@ -258,7 +263,7 @@ $$\pi = \lim_{x \to \infty}\left(2 \operatorname{Si}{\left (2 x \right )}\right)
 
 <h2>093</h2>
 
-$$\pi = \log{\left (4 \right )} \log^{-1}{\left (\lim_{n \to \infty} \prod_{k=n}^{2 n} \frac{\pi}{2 \operatorname{atan}{\left (k \right )}} \right )}$$
+$$\pi = \log{\left (4 \right )} / \log{\left (\lim_{n \to \infty} \prod_{k=n}^{2 n} \frac{\pi}{2 \operatorname{atan}{\left (k \right )}} \right )}$$
 
 <h2>094</h2>
 
@@ -270,15 +275,15 @@ $$\pi = \frac{1}{2} \lim_{k \to \infty}\left(\frac{\left(\frac{k}{e}\right)^{- k
 
 <h2>096</h2>
 
-$$\pi = \lim_{k \to \infty} \left(- \frac{\left(-1\right)^{k}}{\left(2 k\right)!} 2^{2 k - 1} \operatorname{bernoulli}{\left (2 k \right )}\right)^{- \frac{1}{2 k}}$$
+$$\pi = \lim_{k \to \infty} \left(- \frac{\left(-1\right)^{k}}{\left(2 k\right)!} 2^{2 k - 1} B_{2 k \right}\right)^{- \frac{1}{2 k}}$$
 
 <h2>098</h2>
 
-$$\pi = \lim_{x \to \infty}\left(2 \sqrt[4]{x} e^{\frac{2 x^{\frac{3}{2}}}{3}} Ai\left(x\right)\right)^{-2}$$
+$$\pi = \lim_{x \to \infty}\left(2 \sqrt[4]{x} e^{\frac{2 x^{\frac{3}{2}}}{3}} \operatorname{Ai}\left(x\right)\right)^{-2}$$
 
 <h2>099</h2>
 
-$$\pi = \lim_{x \to \infty}\left(\sqrt[4]{x} e^{- \frac{2 x^{\frac{3}{2}}}{3}} Bi\left(x\right)\right)^{-2}$$
+$$\pi = \lim_{x \to \infty}\left(\sqrt[4]{x} e^{- \frac{2 x^{\frac{3}{2}}}{3}} \operatorname{Bi}\left(x\right)\right)^{-2}$$
 
 <h2>100</h2>
 
