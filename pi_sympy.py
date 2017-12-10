@@ -119,13 +119,11 @@ def pi_031():
 # def pi_035():
 #     return simplify(sqrt(7*zeta(3)/(4*diff(lerchphi(-1,x,1), x)).subs(x, -2)))
 
-# Wrong result. See https://github.com/sympy/sympy/pull/10799
-#
-# def pi_036():
-#     return simplify(sqrt(-12*polylog(2,-1)))
+def pi_036():
+    return simplify(sqrt(-12*polylog(2,-1)))
 
 # def pi_037():
-#     simplify(sqrt(6*log(2)**2+12*polylog(2,S(1)/2)))
+#     return simplify(sqrt(6*log(2)**2+12*polylog(2,S(1)/2)))
 
 # def pi_038():
 #     return simplify(root(-81*I*(polylog(3,root(1,3,1))+4*zeta(3)/9)/2,3))
@@ -147,10 +145,8 @@ def pi_042():
 # def pi_043():
 #     return summation((3**k-1)/4**k*zeta(k+1), (k, 1, oo))
 
-# Wrong result. See https://github.com/sympy/sympy/pull/10799
-#
-# def pi_044():
-#     return sqrt(summation(8/(2*k-1)**2, (k, 1, oo))).replace(exp_polar, exp)
+def pi_044():
+    return sqrt(summation(8/(2*k-1)**2, (k, 1, oo))).replace(exp_polar, exp)
 
 def pi_045():
     return summation(2*factorial(k)/factorial2(2*k+1), (k, 0, oo))
@@ -335,6 +331,9 @@ def pi_100():
 
 def pi_101():
     return acos(-1)
+
+# def pi_102():
+#     return 4*summation(atan(1/fibonacci(2*k+1)), (k,1,oo))
 
 def pi_103():
     return integrate(3*(x**2 + 2)/((x**2 + 1)*(x**2 + 4)), (x, 0, oo))
